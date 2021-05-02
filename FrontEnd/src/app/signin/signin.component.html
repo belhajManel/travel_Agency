@@ -1,0 +1,79 @@
+
+<video autoplay muted loop id="myVideo">
+    <source src="assets\video\production ID_5189561.mp4" type="video/mp4">
+ </video>
+ <app-navbar></app-navbar>
+<div class="content">
+ <div class="container">
+   <div class="row justify-content-center">
+
+     <!-- Partie droite -->
+     <div class="col-md-6 order-md-2 imgcontainer">
+       <img src="assets/img/undraw_travelers_qlt1.svg" alt="Image" class="img-fluid">
+     </div>
+
+     <!-- Partie Gauche -->
+     <div class="col-md-6 contents">
+       <div class="row justify-content-center contai">
+         <div class="col-md-8">
+           <div class="mb-4">
+
+             <!-- Navbar -->
+              <nav class="nav1">
+               <ul class="nav-items">
+                 <li class="nav-link other">
+                   <a href="#"  style="color:#101E5A;">SignIn</a>
+                 </li>
+                 <li class="nav-link current">
+                   <a [routerLink]="['/signup']" routerLinkActive="router-link-active" >SignUp</a>
+                 </li>
+               </ul>
+             </nav>
+
+           <p class="mb-4">.</p>
+           <h3>Sign In </h3>
+         </div>
+         <form>
+           <div class="form-group first">
+             <label for="username">Email</label>
+             <input type="text" class="form-control" id="username">
+
+           </div>
+           <div class="form-group last mb-4">
+             <label for="password">Password</label>
+             <input type="password" class="form-control" id="password">
+             
+           </div>
+           
+           <div class="d-flex mb-5 align-items-center">
+             <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+               <input type="checkbox" checked="checked"/>
+               <div class="control__indicator"></div>
+             </label>
+             <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password?</a></span> 
+           </div>
+
+           <input type="submit" (click)="ngOnInit()" value="Sign In" class="btn text-white btn-block btn-primary login">
+
+           <span class="d-block text-left my-4 text-muted"> Or sign in with</span>
+           
+           <div class="social-login">
+             <a [routerLink]="['/signin']" routerLinkActive="router-link-active"  class="facebook">
+               <span class="icon-facebook mr-3"></span> 
+             </a>
+             <a [routerLink]="['/signin']" routerLinkActive="router-link-active"  class="twitter">
+               <span class="icon-twitter mr-3"></span> 
+             </a>
+             <a [routerLink]="['/signin']" routerLinkActive="router-link-active"  class="google">
+               <span class="icon-google mr-3"></span> 
+             </a>
+           </div>
+         </form>
+         </div>
+       </div>
+       
+     </div>
+     
+   </div>
+ </div>
+</div>
