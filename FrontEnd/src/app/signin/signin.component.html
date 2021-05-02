@@ -1,6 +1,6 @@
 
 <video autoplay muted loop id="myVideo">
-    <source src="assets/video/production ID_5189561.mp4" type="video/mp4">
+    <source src="assets\video\production ID_5189561.mp4" type="video/mp4">
  </video>
  <app-navbar></app-navbar>
 <div class="content">
@@ -33,7 +33,7 @@
            <p class="mb-4">.</p>
            <h3>Sign In </h3>
          </div>
-         <form action="#" method="post">
+         <form>
            <div class="form-group first">
              <label for="username">Email</label>
              <input type="text" class="form-control" id="username">
@@ -53,7 +53,7 @@
              <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password?</a></span> 
            </div>
 
-           <input type="submit" value="Sign In" class="btn text-white btn-block btn-primary login">
+           <input type="submit" (click)="ngOnInit()" value="Sign In" class="btn text-white btn-block btn-primary login">
 
            <span class="d-block text-left my-4 text-muted"> Or sign in with</span>
            

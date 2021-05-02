@@ -10,6 +10,8 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { FactureComponent } from './facture/facture.component';
 import { ProfileComponent } from './profile/profile.component';
+import { DestinationComponent } from './destination/destination.component';
+import { ReservationvolComponent } from './reservationvol/reservationvol.component';
 
 
 const routes: Routes = [
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path: 'reservation', component: ReservationComponent},
   {path: '', component: HomeComponent},
   {path: 'facture', component:FactureComponent},
-  {path: 'profile', component: ProfileComponent}
+  {path: 'profile', component: ProfileComponent},
+  {path: 'destination', component: DestinationComponent},
+  {path: 'reservationvol', component: ReservationvolComponent}
 ];
 
 @NgModule({

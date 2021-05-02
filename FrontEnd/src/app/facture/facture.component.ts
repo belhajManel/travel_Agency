@@ -11,5 +11,6 @@ export class FactureComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

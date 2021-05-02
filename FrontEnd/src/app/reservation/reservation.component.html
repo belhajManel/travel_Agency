@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-md-7 col-md-push-5">
                     <div class="booking-cta">
-                        <h1>Make your reservation</h1>
-                        <p>Enter your destination and we'll do the rest!
+                        <h1>Make your Hotel reservation</h1>
+                        <p>Enter your Hotel and we'll do the rest!
                         </p>
                     </div>
                 </div>
@@ -16,13 +16,13 @@
                         <form>
                             
                             <div class="form-group">
-                                <span class="form-label">First & Last Name</span>
-                                <input class="form-control" type="text" placeholder="Enter you first & last name">
+                                <span class="form-label">Username</span>
+                                <input class="form-control" type="text" placeholder="Enter you first & last name" id="user">
                             </div>
                             
                             <div class="form-group">
                                 <span class="form-label">Country</span>
-                                <select class="form-control">
+                                <select class="form-control" id="co">
                                     <option>USA</option>
                                     <option>Spain</option>
                                     <option>Portugal</option>
@@ -32,26 +32,29 @@
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Hotel</span>
-                                <select class="form-control">
+                                <select class="form-control"id="ho">
                                     <option>Four Seasons</option>
                                     <option>Robinson Club</option>
                                     <option>Vila Vita</option>
                                     <option>Bellagio</option>
+                                    <option>No Hotel</option>
                                 </select>
                                 <span class="select-arrow"></span>
                             </div>
+                        
+                       
                             
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <span class="form-label">Check In</span>
-                                        <input class="form-control" type="date" required>
+                                        <span class="form-label" >Check_In</span>
+                                        <input class="form-control" type="date" required id="ci">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <span class="form-label">Check out</span>
-                                        <input class="form-control" type="date" required>
+                                        <span class="form-label">Check_out</span>
+                                        <input class="form-control" type="date" required id="cho">
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +62,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <span class="form-label">Rooms</span>
-                                        <select class="form-control">
+                                        <select class="form-control" id="r">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -70,7 +73,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <span class="form-label">Adults</span>
-                                        <select class="form-control">
+                                        <select class="form-control" id="ad">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -81,7 +84,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <span class="form-label">Children</span>
-                                        <select class="form-control">
+                                        <select class="form-control" id="ch">
                                             <option>0</option>
                                             <option>1</option>
                                             <option>2</option>
@@ -91,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="form-btn">
-                              <a [routerLink]="['/facture']" routerLinkActive="router-link-active" ><button class="submit-btn">Reserve</button></a>  
+                              <a [routerLink]="['/facture']" routerLinkActive="router-link-active" ><button class="submit-btn" (click)="addhotel()">Reserve</button></a>  
                             </div>
                         </form>
                     </div>

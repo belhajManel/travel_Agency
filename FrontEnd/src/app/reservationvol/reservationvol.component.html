@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+<div id="main">
+<div id="booking" class="section">
+    <div class="section-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-push-5">
+                    <div class="booking-cta">
+                        <h1>Make your flight reservation</h1>
+                        <p>Enter your destination and we'll do the rest!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-7">
+                    <div class="booking-form">
+                        <form>
+                            
+                            <div class="form-group">
+                                <span class="form-label">Departure </span>
+                                <input class="form-control" type="text" placeholder="Departure" id="d">
+                            </div>
+                            
+                            <div class="form-group">
+                                <span class="form-label">Arrive </span>
+                                <input class="form-control" type="text" placeholder="Arrive at" id="a">
+                                
+                    
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Date_of_Depart</span>
+                                <input class="form-control" type="date" placeholder="" id="dd">
+
+                                
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Date_of_arival</span>
+                                <input class="form-control" type="date" placeholder="" id="da">
+
+                                
+                            </div>
+                            <div class="form-group" >
+                                <span class="form-label">Categorie</span>
+                                <select class="form-control" id="c">
+                                    <option>economique</option>
+                                    <option>premium</option>
+                                    <option>classe affaire</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                            </div>
+                        
+                       
+                            
+                           
+                            <div class="row" >
+                                
+                                <div class="col-sm-4" >
+                                    <div class="form-group">
+                                        <span class="form-label">adults</span>
+                                        <select class="form-control" id="ad">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" >
+                                    <div class="form-group">
+                                        <span class="form-label">children</span>
+                                        <select class="form-control" id="ch">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                              <a [routerLink]="['/facture']" routerLinkActive="router-link-active" ><button class="submit-btn"(click)="addvol()">Reserve</button></a>  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -32,25 +32,25 @@
            <p class="mb-4">.</p>
            <h3>Sign Up </h3>
          </div>
-         <form action="#" method="post">
+         <form >
           <div class="form-group first">
-            <label for="username">First & Last Name</label>
-            <input type="text" class="form-control" id="username">
+            <label for="username">Name</label>
+            <input type="text" class="form-control" value="tet" id="username">
 
           </div>
           <div class="form-group first">
-            <label for="phone">Phone Number</label>
-            <input type="text" minlength="8" maxlength="8" class="form-control" id="phone">
+            <label for="phone">Phone</label>
+            <input type="text" minlength="8" maxlength="8" value="test" class="form-control" id="phone">
 
           </div>
            <div class="form-group first">
              <label for="email">Email</label>
-             <input type="text" class="form-control" id="email">
+             <input type="text" class="form-control" value="test" id="email">
 
            </div>
            <div class="form-group last mb-4">
              <label for="password">Password</label>
-             <input type="password" class="form-control" id="password">
+             <input type="password" class="form-control" value="test" id="password">
              
            </div>
            
@@ -62,7 +62,7 @@
              <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password?</a></span> 
            </div> -->
 
-           <input type="submit" value="Sign Up" class="btn text-white btn-block btn-primary login">
+           <input type="submit" (click)="add()" value="Sign Up" class="btn text-white btn-block btn-primary login">
 
            <!-- <span class="d-block text-left my-4 text-muted"> Or sign in with</span>
            

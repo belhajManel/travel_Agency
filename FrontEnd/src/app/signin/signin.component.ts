@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SigninComponent implements OnInit {
 
   constructor() { }
+  signin:any;
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    const rep=await fetch("http://127.0.0.1:8000/signin");
+    if (rep.ok){
+      rep.json() .then(data =>{
+        this.signin=data;
+        console.log(this.signin)
+      })
+    }
   }
-
+  
 }
